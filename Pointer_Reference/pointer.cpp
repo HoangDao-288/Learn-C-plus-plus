@@ -90,6 +90,15 @@ int main() {
     delete ptr9;  // deletes the int(90)
     // ptr10 points to ptr9 (stack address) - do NOT delete ptr10
 
+    /* Pointer with array */
+    int arr[] = {1, 2, 3, 4, 5};
+    int *ptr_arr = arr;  /// ptr_arr tro den dia chi cua phan tu dau tien cua mang
+
+    std::cout << "Size of int: " << sizeof(int) << " bytes" << std::endl;
+    std::cout << "Pointer point to value & address of arr[0]: " << *ptr_arr << ", " << ptr_arr << std::endl;
+    std::cout << "Pointer point to value & address of arr[1]: " << *(ptr_arr + 1) << ", " << (ptr_arr + 1) << std::endl;
+    std::cout << "Pointer point to value & address of arr[2]: " << *(ptr_arr + 2) << ", " << (ptr_arr + 2) << std::endl;
+
     return 0;
 }
 

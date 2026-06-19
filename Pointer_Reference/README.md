@@ -5,4 +5,3 @@
 5. const with Pointer
 6. double Pointer
 7. Pointer with array
-8. "this" Pointer
